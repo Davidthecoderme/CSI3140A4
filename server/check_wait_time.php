@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Calculate elapsed time
         $elapsedTime = $currentTime->getTimestamp() - $arrivalTime->getTimestamp();
-        $elapsedMinutes = floor($elapsedTime / 60 /5 );
+        $elapsedMinutes = floor($elapsedTime / 60 / 5 );
 
         echo "Your wait time is probably" . $elapsedMinutes . " minutes.";
     } else {
