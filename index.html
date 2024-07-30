@@ -19,27 +19,33 @@
         <section id="admin-interface">
             <h1>Admin Panel</h1>
             <h1>Add a New Patient</h1>
-    <form id="patient-form" action="" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
-        <label for="severity">Severity (1-10):</label>
-        <input type="number" id="severity" name="severity" min="1" max="10" required><br><br>
-        <input type="hidden" id="uniqueCode" name="uniqueCode">
-        <button type="submit">Add Patient</button>
-    </form>
+            <form id="patient-form" action="" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="severity">Severity (1-10):</label>
+                <input type="number" id="severity" name="severity" min="1" max="10" required><br><br>
+                <input type="hidden" id="uniqueCode" name="uniqueCode">
+                <button type="submit">Add Patient</button>
+            </form>
             <div id="patient-list"></div>
+            
         </section>
         
         <section id="patient-interface">
             <h2>Check Your Wait Time</h2>
             <form id="check-wait-time-form">
                 <input type="text" id="patient-name-check" placeholder="Patient Name" required>
-                <input type="text" id="patient-code-check" placeholder="5-Letter Code" maxlength="5" required>
+                <input type="text" id="patient-code-check" placeholder="3-Letter Code" maxlength="5" required>
                 <button type="submit">Check Wait Time</button>
             </form>
             <div id="wait-time"></div>
         </section>
+
+        
+
+        
     </main>
+    <button onclick="loadPatientList()">Check patient list</button>
     <script src="script.js"></script>
 
 

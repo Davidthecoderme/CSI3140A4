@@ -1,7 +1,7 @@
 document.getElementById('patient-form').addEventListener('submit', function(e) {
     e.preventDefault(); // Prevent the default form submission
 
-    // Generate a unique 5-digit code
+    // Generate a unique 3-digit code
     const uniqueCode = generateUniqueCode();
 
     // Set the generated code in the hidden input field
@@ -29,24 +29,24 @@ document.getElementById('patient-form').addEventListener('submit', function(e) {
 
 
 function generateUniqueCode() {
-    return Math.floor(10000 + Math.random() * 90000); // Generate a random 5-digit number
+    return Math.floor(100 + Math.random() * 900); // Generate a random 5-digit number
 }
 
 
-// function loadPatientList() {
-//     fetch('server/get_patient.php')
-//     .then(response => response.json())
-//     .then(data => {
-//         const patientList = document.getElementById('patient-list');
-//         patientList.innerHTML = '';
-//         data.forEach(patient => {
-//             const patientItem = document.createElement('div');
-//             patientItem.textContent = `${patient.name} (${patient.uniqueCode}) - Severity: ${patient.severity} - Wait Time: ${Math.floor(patient.wait_time / 60)} mins`;
-//             patientList.appendChild(patientItem);
-//         });
-//     })
-//     .catch(error => console.error('Error:', error));
-// }
+    function loadPatientList() {
+        fetch('server/get_patient.php')
+        .then(response => response.json())
+        .then(data => {
+            const patientList = document.getElementById('patient-list');
+            patientList.innerHTML = '';
+            data.forEach(patient => {
+                const patientItem = document.createElement('div');
+                patientItem.textContent = `${patient.name} (${patient.uniquecode}) - Severity: ${patient.severity} - Wait Time in queue: ${Math.floor(patient.wait_time / 60)} mins`;
+                patientList.appendChild(patientItem);
+            });
+        })
+        .catch(error => console.error('Error:', error));
+    }
 
 
 document.getElementById('check-wait-time-form').addEventListener('submit', function(e) {
