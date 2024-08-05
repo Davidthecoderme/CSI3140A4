@@ -48,6 +48,7 @@ CREATE TABLE patients (
 );
 
 2. -- Table for storing admin information
+
 CREATE TABLE admins (
     id SERIAL PRIMARY KEY,
     username VARCHAR(50) NOT NULL UNIQUE,
