@@ -1,3 +1,7 @@
+# Hotel Triage System Setup + Admin/Patient Perspectives
+
+### NOTE: THIS ASSIGNMENT WAS DONE BASED OFF THE ORIGINAL DESCRIPTION OF A4 RELEASED ON BRIGHTSPACE.
+
 ### How to setup application
 - **Step 1**:Ensure PostgreSQL and pgAdmin4 are installed on your system.
 - **Step 2**: Connect to PostgreSQL Server
