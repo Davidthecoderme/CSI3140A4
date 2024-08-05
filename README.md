@@ -1,6 +1,6 @@
 How to setup application
-Step 1:Ensure PostgreSQL and pgAdmin4 are installed on your system.
-Step 2: Connect to PostgreSQL Server
+-Step 1:Ensure PostgreSQL and pgAdmin4 are installed on your system.
+-Step 2: Connect to PostgreSQL Server
 Add a New Server: If you haven't already connected to your PostgreSQL server, you need to add a new server.
 
 Click on the "Servers" item in the Browser panel on the left.
@@ -17,7 +17,7 @@ Password: Enter your PostgreSQL password.
 Save and Connect: Click Save to connect to the server.
 
 
-Step 3: Create a New Database
+-Step 3: Create a New Database
 Navigate to Databases: In the Browser panel, expand the server you just connected to and locate the Databases item.
 
 Create a Database:
@@ -51,7 +51,7 @@ CREATE TABLE admins (
     password VARCHAR(255) NOT NULL
 );
 
-step 4: Insert Test Data (Optional):
+-step 4: Insert Test Data (Optional):
 
 INSERT INTO patients (name, uniquecode, severity) VALUES 
 ('John', '234', 5),
@@ -72,7 +72,7 @@ INSERT INTO patients (name, uniquecode, severity) VALUES
 Copy and paste the following SQL commands into the query editor window:
 ![image](https://github.com/user-attachments/assets/987f3639-7d26-4c6c-902a-a7268ed16747)
 
-Step 5: Enter the corresponding PostgreSQL username and password that you cloned from the repo on your computer, found in under folder server/db_connect.php
+-Step 5: Enter the corresponding PostgreSQL username and password that you cloned from the repo on your computer, found in under folder server/db_connect.php
 ![image](https://github.com/user-attachments/assets/a813314b-b476-4fd1-b3ea-af748667dd3d)
 
 Additional Notes:
