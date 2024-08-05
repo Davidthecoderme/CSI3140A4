@@ -109,7 +109,10 @@ extension=pgsql
 - ![image](https://github.com/user-attachments/assets/382f238e-5bdf-4214-bd74-2f5a1389e6fe)
 
 ## mage page: 
-- patient list displays a list of patients with their IDs, severity levels, and wait times in a hospital triage system.
+- click check patient list: displays a list of patients with their IDs, severity levels, and wait times in a hospital triage system.
+![image](https://github.com/user-attachments/assets/8f800095-eef1-42c7-8479-815ab02272d7)
+ 
+  
 - time table: if the first patient is being treated, the second patient wait time will update. also wait time table will show the postion of current patient is based on the arrival time and severity.
 ![image](https://github.com/user-attachments/assets/a4233433-df40-4c49-945d-8e44b5077cb5)
 
