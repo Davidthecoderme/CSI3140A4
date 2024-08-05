@@ -119,8 +119,3 @@ extension=pgsql
 
 
 
-
-Pictures:
-- ![Admin Panel](snapshot/dashboard.png)
-- ![User Panel](snapshot/patientlistandwaittime.png)
-- ![Admin Registration](snapshot/adminReg.png)
